@@ -11,7 +11,7 @@ $(call inherit-product, device/google/crosshatch/aosp_blueline.mk)
 -include device/google/crosshatch/blueline/device-lineage.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_blueline
+PRODUCT_NAME := rr_blueline
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3
 TARGET_MANUFACTURER := Google
@@ -24,3 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/blueline/blueline:10/QQ3A.200805.001/6578210:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
