@@ -466,3 +466,22 @@
     <!-- Enable CBRS support -->
     <bool translatable="false" name="config_cbrs_supported">true</bool>
 </resources>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+    
+    <!-- Whether to enable doze always on -->
+    <bool name="config_enableDozeAlwaysOn">true</bool>
+
+    <!-- Whether device supports an alt. ambient display -->
+    <bool name="config_alt_ambient_display">true</bool>
+    
+    <!-- If Smart charging supported by kernel and device sepolicy -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    
+    <!-- If device supports battery health options -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batChargeCycle">/sys/class/power_supply/bms/charge_counter</string>
+    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
+    </resources>
