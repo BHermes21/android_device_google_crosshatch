@@ -1,3 +1,4 @@
+
 #
 # Copyright 2015 The Android Open Source Project
 #
@@ -16,9 +17,11 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_crosshatch.mk \
-    $(LOCAL_DIR)/aosp_blueline.mk \
-    $(LOCAL_DIR)/aosp_crosshatch_hwasan.mk \
-    $(LOCAL_DIR)/aosp_blueline_hwasan.mk \
+    $(LOCAL_DIR)/aosp_blueline.mk
+
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/lineage_blueline.mk \
+    $(LOCAL_DIR)/lineage_crosshatch.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_crosshatch-userdebug \
