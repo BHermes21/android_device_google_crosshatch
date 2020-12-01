@@ -259,12 +259,16 @@
          from DOZE to ON. -->
     <integer name="config_wakeUpDelayDoze">50</integer>
 
-    <!-- Disable AOD by default -->
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>
-
     <!-- If true, the doze component is not started until after the screen has been turned off
          and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
@@ -465,23 +469,13 @@
 
     <!-- Enable CBRS support -->
     <bool translatable="false" name="config_cbrs_supported">true</bool>
-</resources>
 
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_enableSmartPixels">true</bool>
-    
+    <!-- Whether the device supports Smart Pixels --> 
+    <bool name="config_supportSmartPixels">true</bool>
+
     <!-- Whether to enable doze always on -->
     <bool name="config_enableDozeAlwaysOn">true</bool>
 
     <!-- Whether device supports an alt. ambient display -->
     <bool name="config_alt_ambient_display">true</bool>
-    
-    <!-- If Smart charging supported by kernel and device sepolicy -->
-    <bool name="config_smartChargingAvailable">true</bool>
-    
-    <!-- If device supports battery health options -->
-    <bool name="config_supportBatteryHealth">true</bool>
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/charge_counter</string>
-    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
-    </resources>
+</resources>
