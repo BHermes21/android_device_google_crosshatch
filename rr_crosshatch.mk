@@ -8,7 +8,7 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 
--include device/google/crosshatch/crosshatch/device-rr.mk
+-include device/google/crosshatch/crosshatch/device-lineage.mk
 
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
