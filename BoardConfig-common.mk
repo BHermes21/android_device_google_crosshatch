@@ -178,6 +178,8 @@ endif
 
 include device/google/crosshatch/sepolicy/crosshatch-sepolicy.mk
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 TARGET_FS_CONFIG_GEN := device/google/crosshatch/config.fs
 
 QCOM_BOARD_PLATFORMS += sdm845
